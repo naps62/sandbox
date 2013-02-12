@@ -20,5 +20,4 @@ int main(int argc, char **argv) {
 	gl_worker gl(config);
 	gl.start();
 	gl.join();
-
 }
