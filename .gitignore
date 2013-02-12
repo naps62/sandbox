@@ -2,3 +2,6 @@ a.out
 *.log
 *.tmp
 *.aux
+Debug/
+Release/
+Profile/
