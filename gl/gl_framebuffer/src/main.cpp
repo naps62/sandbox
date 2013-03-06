@@ -9,7 +9,7 @@
 #include <beast/profile.hpp>
 #include <beast/program_options.hpp>
 
-#include "gl_worker.h"
+#include "async_gl.h"
 #include "config.h"
 
 #include <iostream>
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 
 	Config config("options", argc, argv);
 
-	gl_worker gl(config);
+	async_gl gl(config);
 	gl.start();
 	gl.join();
 }
