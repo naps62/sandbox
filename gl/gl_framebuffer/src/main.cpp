@@ -7,17 +7,14 @@
 
 #include <beast/debug.hpp>
 #include <beast/profile.hpp>
-#include <beast/program_options.hpp>
 
-#include "async_gl.h"
+#include <beast/gl/async_window.hpp>
 #include "config.h"
 
 #include <iostream>
 int main(int argc, char **argv) {
 
-	Config config("options", argc, argv);
-
-	async_gl gl(config);
-	gl.start();
-	gl.join();
+	beast::gl::async_window window;
+	window.start();
+	window.join();
 }
